@@ -16,7 +16,7 @@ The ShareFlow project is a full-stack solution that includes both frontend and b
 
 ### ShareFlow Pipeline
 
-The ShareFlow generation process involves the serialization of user trace data, followed by action mapping, process labeling, and image generation, resulting in a structured representation of user interactions.
+The ShareFlow generation process involves the serialization of user trace data, followed by action mapping, process labeling, and image generation, resulting in a structured representation of user interactions as a process flow.
 
 #### 1. Serialization of User Trace Data
 - **Function**: `process_serialize`
@@ -38,7 +38,7 @@ The ShareFlow generation process involves the serialization of user trace data, 
 
 #### 4. Image Generation
 - **Input**: Labeled user actions, with each sequence tagged with a `KM_Process`.
-- **Process**: Utilizes the OpenCV library to generate images, including action and text overlays, as well as capturing screenshots of user interactions.
+- **Process**: Utilizes the OpenCV library to generate images, including action and text overlays, as well as including the screenshots of user interactions.
 - **Output**: An updated list of user events, each associated with corresponding process images.
 
 The final result is a ShareFlow document in nested JSON format, representing the structured sequence of user interactions during a session.
