@@ -13,6 +13,9 @@ The provided code snippets are intended for integration into your project and ca
 
 The repository contains the following key components:
 
+- Baseline-ChatUI 
+- ShareFlow
+
 ## Contributing
 
 We welcome contributions to the ShareFlow project! If you would like to contribute, please:
