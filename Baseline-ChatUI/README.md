@@ -43,26 +43,6 @@ Users can interact with the following LLMs via the Chat UI to fulfill their info
 
 Both the Chat UI and API support seamless integration with the KMASS system.
 
-## Hint Initialization for Subjects/Tasks
-
-Hint initialization allows the insertion of customizable hints into the chat prompts for each subject or task. Hints can be passed in one of two formats:
-
-### 1. Full Hint
-
-You can pass a full hint string directly using the `hint` URL parameter. Example:
-```
-https://chat.kmass.io/?hint=The%20user%20is%20a%20test%20user&subject_id=test&task_id=test&token=token
-```
-
-### 2. Keyword Arguments for Default Hints
-
-This method assumes a stored hint with customizable keywords. The stored hint must be communicated to the APL team ahead of time. Keyword values can be passed as additional GET parameters, which will be expanded server-side. Example:
-```
-https://chat.kmass.io/?user_type=test&subject_id=test&task_id=test&token=token
-```
-
-You can also use the "Create Subject/Task Link" modal dialog. By default, a hint with a keyword argument is displayed, allowing users to customize their chat experience.
-
 ## API Documentation
 
 The full API documentation is available at [api.kmass.io/docs](https://api.kmass.io/docs). The API supports interactions with the same models available through the Chat UI.
